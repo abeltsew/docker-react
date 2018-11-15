@@ -3,7 +3,7 @@ services:
   -docker
 
 before_install:
-  - dicker build -t abeltsew/docker-react -f Dockerfile.dev .
+  - docker build -t abeltsew/docker-react -f Dockerfile.dev .
 
 script:
 - docker run abeltsew/docker-react npm run test -- --coverage
